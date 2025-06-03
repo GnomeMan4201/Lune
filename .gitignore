@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.log
+.lune_sessions/
+lune_env/
+.env/
+.idea/
+.DS_Store
