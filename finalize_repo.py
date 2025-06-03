@@ -1,36 +1,41 @@
 #!/usr/bin/env python3
+
 import subprocess
 import os
-import datetime
-import webbrowser
+from datetime import datetime
 
 def run(cmd, cwd=None):
-    print(f"[+] Running: {cmd}")
+    print(f"\n[+] Running: {cmd}")
     subprocess.run(cmd, shell=True, check=True, cwd=cwd)
 
-# 1. Run tests
-run("pytest tests")
+def tag_version():
+    tag = datetime.utcnow().strftime("v%Y.%m.%d.%H%M")
+    run(f"git tag {tag}")
+    run("git push --tags")
+    print(f"[✓] Tagged release: {tag}")
 
-# 2. Rebuild docs
-run("sphinx-build -b html docs/ docs/_build/html")
+def main():
+    # Step 1: Ensure dependencies are current
+    run("pip install -r requirements.txt")
 
-# 3. Git add + commit if changes
-try:
-    subprocess.run("git diff --quiet", shell=True, check=True)
-    print("[✓] No changes to commit.")
-except subprocess.CalledProcessError:
-    run('git add .')
-    msg = f"Finalize repo at {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
-    run(f'git commit -m "{msg}"')
+    # Step 2: Run tests
+    run("pytest tests")
 
-# 4. Auto tag
-today_tag = datetime.datetime.now().strftime("v0.1-%Y%m%d-%H%M")
-run(f"git tag {today_tag}")
-run("git push")
-run("git push --tags")
+    # Step 3: Regenerate docs (auto-imports, new modules)
+    run("python3 generate_modules_toc.py")
+    run("sphinx-build -b html docs/ docs/_build/html")
 
-# 5. Open GitHub Releases page
-repo_url = "https://github.com/GnomeMan4201/Lune/releases"
-print(f"[✓] Repo finalized and tagged: {today_tag}")
-print(f"[🌍] Opening {repo_url}")
-webbrowser.open(repo_url)
+    # Step 4: Stage and commit all changes
+    run("git add .")
+    run('git commit -m "Finalize release: test pass, docs built"')
+
+    # Step 5: Push code and tag version
+    run("git push")
+    tag_version()
+
+    # Step 6: Open the GitHub Releases page
+    repo_url = "https://github.com/GnomeMan4201/Lune/releases"
+    run(f"xdg-open {repo_url} || open {repo_url}")
+
+if __name__ == "__main__":
+    main()
