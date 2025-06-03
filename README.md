@@ -1,27 +1,28 @@
-# Lune DevToolkit XYZ
+# Lune
 
-A modular post-exploitation toolkit for red team operators and adversary simulation.
+Lune is a tool designed to [briefly describe its core purpose].
 
-## Features
-- Modular design for flexible payloads and operations
-- Includes deception, obfuscation, and tagging components
-- Easily extensible
+## 🚀 Features
+- Feature 1
+- Feature 2
+- Feature 3
 
-## Installation
+## 🛠️ Installation
 
-TestPyPI:
-    pip install --index-url https://test.pypi.org/simple/ lune-devtoolkit-xyz
+```bash
+git clone https://github.com/GnomeMan4201/Lune.git
+cd Lune
+# add setup instructions here
+```
 
-## Usage
+## 📦 Usage
 
-    python -m lune
+```bash
+# add usage example
+```
 
-## Development
+## 🤝 Contributing
+See [CONTRIBUTING.md](CONTRIBUTING.md)
 
-    python3 -m venv venv
-    source venv/bin/activate
-    pip install -e .
-
-## License
-MIT
-
+## 📜 License
+MIT - see [LICENSE](LICENSE)

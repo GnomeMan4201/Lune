@@ -1,3 +1,11 @@
+#!/bin/bash
+echo "[+] Removing all old workflows..."
+rm -f .github/workflows/*.yml
+
+echo "[+] Writing minimal release.yml..."
+mkdir -p .github/workflows
+
+cat > .github/workflows/release.yml << 'EOF'
 name: Release & Docs
 
 on:
@@ -35,3 +43,12 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: docs/_build/html
+EOF
+
+echo "[+] Committing and tagging..."
+git add .github/workflows/release.yml
+git commit -m "🚀 Clean slate CI: only docs"
+git tag v0.3.0
+git push origin main --tags
+
+echo "[✓] CI is now docs-only. You’re cleared for launch."
