@@ -2,61 +2,66 @@
 
 | Module | Description |
 |--------|-------------|
-| `aether` | DNS profile enumerator |
-| `alibi` | Process masquerade engine |
-| `bleachmouth` | System log bleacher |
-| `briefcase` | Bait-and-switch archive dropper |
-| `brine` | Network profile poisoner |
-| `clogque` | Firewall and AV evasion tool |
-| `crux` | Credential dumper |
-| `decoy` | Pseudorandom event generator |
-| `dreamtether` | Persistence binder |
-| `dryad` | Passive DNS recon |
-| `etch` | Drive label spoofing |
-| `fable` | Fake identity profiler |
-| `flicker` | Screen activity capture |
-| `fracture` | Process injector |
-| `ghostctl` | C2 comms over ICMP |
-| `ghostload` | Steganographic payload loader |
-| `glassing` | Remote desktop activity spy |
-| `glint` | TLS beacon simulator |
-| `grackle` | Clipboard hijacker |
-| `hearse` | Memory scanner |
-| `helix` | Multistage payload dropper |
-| `hollowroot` | Registry backdoor |
-| `latch` | UAC bypass |
-| `lurestate` | Mimic login prompts |
-| `meta` | System and suite diagnostics |
-| `mimesis` | Impersonation module |
-| `mirador` | Webcam feed sniffer |
-| `mutagen` | LLM-powered AI module for stealth payload generation, OPSEC analysis, and phishing crafting. Supports personas and task-specific optimizations. |
-| `myco` | Local privilege escalation probe |
-| `noct` | Power event manipulator |
-| `nullflow` | Packet padding and obfuscation |
-| `obscura` | Encrypted payload obfuscator |
-| `orchestrator` | Distributed module handler |
-| `palebox` | Stager obfuscator |
-| `parasite` | Native loader stub |
-| `pivot` | Authenticated lateral movement |
-| `relic` | Artifact cleaner |
-| `shade` | Window cloaker |
-| `shellsworn` | Pseudo shell deployer |
-| `shuck` | Decrypt and drop payload |
-| `siphon` | Network exfiltration tool |
-| `sliphook` | Persistence enabler |
-| `smudge` | File timestamp fuzzer |
-| `specter` | In-memory fileless execution module |
-| `spindle` | Dropper and autorun hooker |
-| `stealth` | Environment evasion and cron binder |
-| `stitch` | Modular task binder |
-| `thresh` | Directory watcher and trigger |
-| `vane` | Host fingerprinting |
-| `vanish` | Self-delete suite |
-| `veil` | Entropy masker |
-| `velvetroom` | Command queue server |
-| `wallflower` | User idle tracker |
-| `watchtower` | User session logger and keystroke monitor |
-| `winnow` | File filter and selector |
-| `wisp` | Sudo context inspector |
-| `wraith` | Timestomp and decoy creator |
-| `yield` | Process yield controller |
+| `aether` | *Undocumented module* |
+| `alibi` | *Undocumented module* |
+| `bleachmouth` | *Undocumented module* |
+| `briefcase` | *Undocumented module* |
+| `brine` | *Undocumented module* |
+| `clogque` | *Undocumented module* |
+| `crux` | *Undocumented module* |
+| `deception.operator_filter` | *Undocumented module* |
+| `deception.perception_control` | *Undocumented module* |
+| `deception.perception_input` | *Undocumented module* |
+| `deception.perception_lens` | *Undocumented module* |
+| `deception.perception_nuke` | *Undocumented module* |
+| `deception.shell_alias_injector` | *Undocumented module* |
+| `deception.traitor_mode` | *Undocumented module* |
+| `deception.xattr_tagger` | *Undocumented module* |
+| `decoy` | *Undocumented module* |
+| `dreamtether` | dreamtether.py — Sandbox-Aware Payload Tether |
+| `dryad` | *Undocumented module* |
+| `etch` | *Undocumented module* |
+| `fable` | *Undocumented module* |
+| `flicker` | *Undocumented module* |
+| `fracture` | *Undocumented module* |
+| `ghostctl` | *Undocumented module* |
+| `ghostload` | *Undocumented module* |
+| `glassing` | *Undocumented module* |
+| `glint` | *Undocumented module* |
+| `grackle` | *Undocumented module* |
+| `hearse` | *Undocumented module* |
+| `helix` | *Undocumented module* |
+| `hollowroot` | *Undocumented module* |
+| `latch` | latch.py — Credential Reuse Validator for LUNE |
+| `lurestate` | *Undocumented module* |
+| `meta` | *Undocumented module* |
+| `mimesis` | *Undocumented module* |
+| `mirador` | *Undocumented module* |
+| `myco` | *Undocumented module* |
+| `noct` | *Undocumented module* |
+| `nullflow` | *Undocumented module* |
+| `obscura` | *Undocumented module* |
+| `orchestrator` | *Undocumented module* |
+| `palebox` | *Undocumented module* |
+| `parasite` | *Undocumented module* |
+| `pivot` | *Undocumented module* |
+| `relic` | *Undocumented module* |
+| `shade` | *Undocumented module* |
+| `shellsworn` | *Undocumented module* |
+| `shuck` | *Undocumented module* |
+| `siphon` | *Undocumented module* |
+| `sliphook` | *Undocumented module* |
+| `smudge` | *Undocumented module* |
+| `spindle` | *Undocumented module* |
+| `stealth` | *Undocumented module* |
+| `stitch` | *Undocumented module* |
+| `thresh` | *Undocumented module* |
+| `vane` | *Undocumented module* |
+| `vanish` | *Undocumented module* |
+| `veil` | *Undocumented module* |
+| `velvetroom` | velvetroom.py — Identity & Fingerprint Auditor |
+| `wallflower` | *Undocumented module* |
+| `winnow` | *Undocumented module* |
+| `wisp` | *Undocumented module* |
+| `wraith` | *Undocumented module* |
+| `yield` | yield.py — Signature Drift Detector |
