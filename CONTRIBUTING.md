@@ -1,21 +1,11 @@
-# 🤝 Contributing to LUNE
+# Contributing to Lune
 
-Thanks for your interest in improving LUNE!
+Thanks for your interest in contributing!
 
-## 🔄 Workflow
+## How to contribute
+1. Fork the repo
+2. Create a feature branch
+3. Commit changes
+4. Push and submit a Pull Request
 
-1. Fork the repo and clone your fork.
-2. Create a new branch (`feature/your-feature`).
-3. Make your changes and test thoroughly.
-4. Push to your fork and open a pull request.
-
-## 🧼 Code Style
-
-- Use Python 3.8+ compatible syntax
-- Follow PEP8 via `flake8` or `black`
-- Comment your modules and include docstrings
-- Prefer clarity over cleverness
-
-## 🧪 Tests
-
-We recommend adding minimal tests to cover your changes using `pytest`.
+Please write clear commits and document your code.

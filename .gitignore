@@ -1,8 +1,8 @@
-*.pyc
+# Python
 __pycache__/
-*.egg-info/
+*.pyc
+
+# Node
+node_modules/
 dist/
-build/
-*.log
 .env
-*.swp
