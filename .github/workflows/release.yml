@@ -35,7 +35,7 @@ jobs:
         run: |
           pip install .[docs] || pip install sphinx furo
 
-      - name: Patch conf.py (path to lune/)
+      - name: Patch conf.py
         run: |
           echo "import os, sys; sys.path.insert(0, os.path.abspath('lune'))" >> docs/conf.py
 
