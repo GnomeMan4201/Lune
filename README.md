@@ -1,28 +1,53 @@
 # Lune
 
-Lune is a tool designed to [briefly describe its core purpose].
+Lune is a modular adversary simulation and red team operations framework.  
+It supports controlled offensive testing, deception operations, and post-exploitation tooling for research and training environments.
 
-## 🚀 Features
-- Feature 1
-- Feature 2
-- Feature 3
+---
 
-## 🛠️ Installation
+## Features
+
+- Modular architecture with a growing library of payloads and deception tools
+- Multiple interfaces: CLI, TUI, and GUI
+- CVE emulation modules and custom post-exploitation payloads
+- Ghostload, nullflow, stealth execution, and operator-focused tooling
+
+---
+
+## Installation
 
 ```bash
 git clone https://github.com/GnomeMan4201/Lune.git
 cd Lune
-# add setup instructions here
+pip install -r requirements.txt
 ```
 
-## 📦 Usage
+---
+
+## Usage
+
+Run the interactive TUI:
 
 ```bash
-# add usage example
+python -m lune.lune_tui
 ```
 
-## 🤝 Contributing
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+Run a specific module:
 
-## 📜 License
-MIT - see [LICENSE](LICENSE)
+```bash
+python -m lune.modules.<module_name>
+```
+
+---
+
+## Contributing
+
+Pull requests are welcome.  
+See `CONTRIBUTING.md` for guidelines on how to contribute, report issues, or propose new modules.
+
+---
+
+## License
+
+Lune is released under the MIT License.  
+See `LICENSE` for more details.
