@@ -1,8 +1,21 @@
+# Python artifacts
 __pycache__/
-*.pyc
-*.log
-.lune_sessions/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
+
+# Virtual environments
+venv/
 lune_env/
-.env/
-.idea/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+
+# OS-specific files
 .DS_Store
+Thumbs.db
