@@ -19,3 +19,4 @@ lune_env/
 # OS-specific files
 .DS_Store
 Thumbs.db
+docs/_build/
