@@ -15,7 +15,9 @@ Modules
    generated/lune.modules.crux
    generated/lune.modules.decoy
    generated/lune.modules.dreamtether
+   generated/lune.modules.dryad
    generated/lune.modules.etch
+   generated/lune.modules.fable
    generated/lune.modules.flicker
    generated/lune.modules.fracture
    generated/lune.modules.ghostctl
