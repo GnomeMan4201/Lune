@@ -1,20 +1,23 @@
 # LUNE :: Offensive Operator Console
+![Build Status](https://github.com/GnomeMan4201/Lune/actions/workflows/test.yml/badge.svg)
+![Docs Status](https://github.com/GnomeMan4201/Lune/actions/workflows/deploy_docs.yml/badge.svg)
+
 
 A terminal-based shell interface for secure operator workflows, module execution, and auditing. Designed for elegance, usability, and stealth.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🔐 PIN-protected access
-- 📜 Audit logging of all command usage
-- ⚙️ Custom modules (intelshare, cleanroom, traitor, injector)
-- 🖥️ System stats (CPU, RAM, OS)
-- 🧩 Config-based PIN control via `~/.luneconfig`
+-  PIN-protected access
+-  Audit logging of all command usage
+- Custom modules (intelshare, cleanroom, traitor, injector)
+- System stats (CPU, RAM, OS)
+-  Config-based PIN control via `~/.luneconfig`
 
 ---
 
-## 📁 Folder Structure
+##  Folder Structure
 
 ```
 LUNE/
@@ -30,7 +33,7 @@ LUNE/
 
 ---
 
-## 🛠 Requirements
+##  Requirements
 
 - Python 3.7+
 - Packages: `psutil`
@@ -42,7 +45,7 @@ pip install psutil
 
 ---
 
-## 🔐 Configuring Your PIN
+##  Configuring Your PIN
 
 Create a hidden config file in your home directory:
 
@@ -56,7 +59,7 @@ Change the PIN to anything you like. This replaces hardcoded values.
 
 ---
 
-## 🧠 Usage
+##  Usage
 
 Start the shell:
 ```bash
@@ -74,7 +77,7 @@ Then interact:
 
 ---
 
-## 📓 Writing Your Own Modules
+##  Writing Your Own Modules
 
 Each module should be placed in `startup/` and contain a `main()` function:
 
@@ -91,7 +94,7 @@ Once dropped in, it's callable via:
 
 ---
 
-## 🧼 Tips
+##  Tips
 
 - `Ctrl+C` exits safely
 - All access is logged to `~/.lune_audit.log`
@@ -99,6 +102,6 @@ Once dropped in, it's callable via:
 
 ---
 
-## 📣 Credits
+##  Credits
 
 Designed for top-tier operator workflows by LUNE. Feedback and feature requests welcome.
