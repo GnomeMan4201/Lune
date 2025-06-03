@@ -2,7 +2,14 @@ project = 'LUNE'
 author = 'GnomeMan4201'
 release = '0.1'
 
-extensions = ['sphinx.ext.autodoc']
+extensions = [
+    'sphinx.ext.autodoc',
+    'sphinx.ext.napoleon',
+    'sphinx.ext.autosummary'
+]
+
+autosummary_generate = True
+
 templates_path = ['_templates']
 exclude_patterns = []
 
