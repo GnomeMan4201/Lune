@@ -1,8 +1,5 @@
-# Python
 __pycache__/
 *.pyc
-
-# Node
-node_modules/
-dist/
+*.swp
 .env
+.venv
