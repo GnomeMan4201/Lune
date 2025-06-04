@@ -7,12 +7,15 @@
 LUNE (Logical Uncertainty & Network Evasion) is a modular red team framework focused on adversary simulation, deception environments, and operational misdirection. Designed to run on Kali Linux and similar environments, LUNE allows operators to construct complex false realities inside target systems using layered decoys, injected noise, and deceptive behaviors.
 
 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Philosophy:
 Most decoy and misdirection frameworks are designed for defensive purposes—to confuse attackers or distract them from real assets. LUNE flips that model on its head. This framework is built for offensive operators who want to run deception as a weapon—flooding target environments with crafted noise, fake shells, forged events, and manipulated telemetry.
 
 LUNE is what you reach for when subtlety is no longer the goal—when it’s time to go in loud and dirty. Think of it as "offensive misdirection at scale" a psychological smokescreen that disorients defenders while the operator sees through the chaos like Riddick in the dark. You’re not just hiding… you’re weaponizing confusion.
 
----
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Features
 
@@ -33,7 +36,7 @@ LUNE is what you reach for when subtlety is no longer the goal—when it’s tim
   <img src="lune/assets/LUNE_PIPELINE.png" alt="LUNE Deception Pipeline" width="700"/> 
 </p>
 
----
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Quickstart
 
