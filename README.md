@@ -35,7 +35,3 @@ chmod +x setup.sh
 source lune_env/bin/activate
 
 python3 -m lune.lune_tui  # Text UI launcher
-
-<p align="center">
-  <img src="visuals/lune_flow.png" alt="LUNE architecture and deception flow" width="800"/>
-</p>
