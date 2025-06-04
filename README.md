@@ -38,6 +38,7 @@ python3 -m lune.lune_tui  # Text UI launcher
 
 ## Architecture
 
-<p align="center">
-  <img src="visuals/lune_flow.png" alt="LUNE architecture and deception flow" width="800"/>
-</p>
+## Visual Overview
+
+![LUNE Deception Pipeline](gitpic2.png)
+
