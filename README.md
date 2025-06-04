@@ -3,6 +3,7 @@
 </p>
 
 # 
+
 LUNE (Logical Uncertainty & Network Evasion) is a modular red team framework focused on adversary simulation, deception environments, and operational misdirection. Designed to run on Kali Linux and similar environments, LUNE allows operators to construct complex false realities inside target systems using layered decoys, injected noise, and deceptive behaviors.
 
 ---
@@ -33,5 +34,3 @@ chmod +x setup.sh
 ./setup.sh
 source lune_env/bin/activate
 python3 -m lune.lune_tui  # TUI launcher
-
-<p align="center"> <img src="lune/assets/LUNE_FLOWCHART.png" alt="LUNE Workflow" width="700"/> </p> ```
