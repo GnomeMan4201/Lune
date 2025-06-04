@@ -1,53 +1,33 @@
-# Lune
+<p align="center">
+  <img src="lune/assets/lune-banner.png" alt="LUNE Logo" width="400"/>
+</p>
 
-Lune is a modular adversary simulation and red team operations framework.  
-It supports controlled offensive testing, deception operations, and post-exploitation tooling for research and training environments.
+**LUNE** (Logical Uncertainty & Network Evasion) is a modular red team framework focused on adversary simulation, deception environments, and operational misdirection.
+
+Designed to run on Kali Linux and similar environments, LUNE allows operators to construct complex false realities inside target systems using layered decoys, injected noise, and deceptive behaviors.
 
 ---
 
 ## Features
 
-- Modular architecture with a growing library of payloads and deception tools
-- Multiple interfaces: CLI, TUI, and GUI
-- CVE emulation modules and custom post-exploitation payloads
-- Ghostload, nullflow, stealth execution, and operator-focused tooling
+- Modular deception and implant ecosystem
+- Operator-side TUI interface
+- Real-time decoy injection, log pollution, false trail planting
+- Modular design: plug-and-play scripts, drop-ins, and context-aware logic
+- Post-ex toolkit integration
+- Payload orchestration and noise layering
+- Terminal and GUI entrypoints
+- Designed for adaptability in offensive operations
 
 ---
 
-## Installation
+## Quickstart
 
 ```bash
 git clone https://github.com/GnomeMan4201/Lune.git
 cd Lune
-pip install -r requirements.txt
-```
+chmod +x setup.sh
+./setup.sh
+source lune_env/bin/activate
 
----
-
-## Usage
-
-Run the interactive TUI:
-
-```bash
-python -m lune.lune_tui
-```
-
-Run a specific module:
-
-```bash
-python -m lune.modules.<module_name>
-```
-
----
-
-## Contributing
-
-Pull requests are welcome.  
-See `CONTRIBUTING.md` for guidelines on how to contribute, report issues, or propose new modules.
-
----
-
-## License
-
-Lune is released under the MIT License.  
-See `LICENSE` for more details.
+python3 -m lune.lune_tui  # Text UI launcher
