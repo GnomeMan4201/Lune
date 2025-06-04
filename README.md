@@ -1,6 +1,8 @@
 <p align="center">
-  <img src="lune/assets/lune-banner.png" alt="LUNE Logo" width="400"/>
+  <img src="lune/assets/lune-banner.png" alt="LUNE Banner" width="500"/>
 </p>
+
+# LUNE
 
 **LUNE** (Logical Uncertainty & Network Evasion) is a modular red team framework focused on adversary simulation, deception environments, and operational misdirection.
 
@@ -20,7 +22,25 @@ Designed to run on Kali Linux and similar environments, LUNE allows operators to
 - Designed for adaptability in offensive operations
 
 <p align="center">
-  <img src="lune/assets/gitpic.png" alt="LUNE Operator Console Screenshot" width="700"/>
+  <img src="lune/assets/gitpic.png" alt="LUNE TUI Screenshot" width="700"/>
+</p>
+
+---
+
+## Architecture
+
+LUNE’s deception flow centers around injecting realistic noise into a controlled fake shell environment layered over the real system. The operator maintains full visibility while the target system is flooded with misleading artifacts.
+
+<p align="center">
+  <img src="visuals/lune_flow.png" alt="LUNE Architecture Diagram" width="800"/>
+</p>
+
+---
+
+## Screenshots
+
+<p align="center">
+  <img src="lune/assets/gitpic2.png" alt="LUNE Operator Console Full View" width="800"/>
 </p>
 
 ---
