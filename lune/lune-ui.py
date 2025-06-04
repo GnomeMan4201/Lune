@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 import sys
 import importlib
@@ -18,7 +19,7 @@ BANNER = f"""{RED}██████╗ ██╗   ██╗███╗   █�
 
 # Load module descriptions dynamically
 MODULES = {}
-module_desc_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'module_descriptions.json'))
+module_desc_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "configs", "module_descriptions.json"))
 with open(module_desc_path, 'r') as f:
     module_desc = json.load(f)
     MODULES = {k: (f"modules.{k}", v) for k, v in module_desc.items()}
