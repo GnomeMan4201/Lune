@@ -14,14 +14,14 @@
 
 ## Features
 
-- Modular deception and implant ecosystem
-- Operator-side TUI interface
-- Real-time decoy injection, log pollution, false trail planting
-- Modular design: plug-and-play scripts, drop-ins, and context-aware logic
-- Post-ex toolkit integration
-- Payload orchestration and noise layering
-- Terminal and GUI entrypoints
-- Designed for adaptability in offensive operations
+- Modular deception and implant ecosystem  
+- Operator-side TUI interface  
+- Real-time decoy injection, log pollution, false trail planting  
+- Modular design: plug-and-play scripts, drop-ins, and context-aware logic  
+- Post-ex toolkit integration  
+- Payload orchestration and noise layering  
+- Terminal and GUI entrypoints  
+- Designed for adaptability in offensive operations  
 
 <p align="center">  
   <img src="lune/assets/LUNE.png" alt="LUNE UI Screenshot" width="700"/> 
@@ -38,12 +38,3 @@ chmod +x setup.sh
 ./setup.sh
 source lune_env/bin/activate
 python3 -m lune.lune_tui  # TUI launcher
-```
-
----
-
-## How LUNE Works
-
-<p align="center">  
-  <img src="lune/assets/LUNE_FLOWCHART.png" alt="LUNE Workflow" width="800"/> 
-</p>
