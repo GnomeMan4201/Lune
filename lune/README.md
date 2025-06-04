@@ -1,12 +1,14 @@
-<p align="center">
-  <img src="lune/assets/lune-banner.png" alt="LUNE Banner" width="500"/>
+<p align="center">  
+  <img src="lune/assets/LUNE_LOGO.png" alt="LUNE Logo" width="300"/> 
+</p>
+
+<p align="center">  
+  <img src="lune/assets/lune-banner.png" alt="LUNE Banner" width="500"/> 
 </p>
 
 # Lune
 
-**LUNE** (Logical Uncertainty & Network Evasion) is a modular red team framework focused on adversary simulation, deception environments, and operational misdirection.
-
-Designed to run on Kali Linux and similar environments, LUNE allows operators to construct complex false realities inside target systems using layered decoys, injected noise, and deceptive behaviors.
+**LUNE** (Logical Uncertainty & Network Evasion) is a modular red team framework focused on adversary simulation, deception environments, and operational misdirection. Designed to run on Kali Linux and similar environments, LUNE allows operators to construct complex false realities inside target systems using layered decoys, injected noise, and deceptive behaviors.
 
 ---
 
@@ -21,8 +23,8 @@ Designed to run on Kali Linux and similar environments, LUNE allows operators to
 - Terminal and GUI entrypoints
 - Designed for adaptability in offensive operations
 
-<p align="center">
-  <img src="lune/assets/lune_github_picture.png" alt="LUNE UI Screenshot" width="700"/>
+<p align="center">  
+  <img src="lune/assets/LUNE.png" alt="LUNE UI Screenshot" width="700"/> 
 </p>
 
 ---
@@ -35,5 +37,13 @@ cd Lune
 chmod +x setup.sh
 ./setup.sh
 source lune_env/bin/activate
-
 python3 -m lune.lune_tui  # TUI launcher
+```
+
+---
+
+## How LUNE Works
+
+<p align="center">  
+  <img src="lune/assets/LUNE_FLOWCHART.png" alt="LUNE Workflow" width="800"/> 
+</p>
