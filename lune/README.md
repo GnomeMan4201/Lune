@@ -2,7 +2,7 @@
   <img src="lune/assets/lune-banner.png" alt="LUNE Banner" width="500"/>
 </p>
 
-# LUNE
+#
 
 LUNE (Layered Uncertainty & Network Entrapment) is a modular red team simulation and deception framework.  
 It’s designed to weaponize noise, simulate phantom presence, poison logs, and sow uncertainty throughout target systems.
@@ -21,11 +21,9 @@ It’s designed to weaponize noise, simulate phantom presence, poison logs, and 
 - Modular build and deployment pipeline
 
 ---
-
 <p align="center">
-  <img src="lune/assets/lune_github_picture.png" alt="LUNE in Action" width="700"/>
+  <img src="lune/assets/lune_github_picture.png" alt="LUNE In Use" width="800"/>
 </p>
-
 ---
 
 ## Getting Started
