@@ -23,6 +23,10 @@ LUNE (Logical Uncertainty & Network Evasion) is a modular red team framework foc
   <img src="lune/assets/LUNE.png" alt="LUNE UI Overview" width="700"/> 
 </p>
 
+<p align="center">  
+  <img src="lune/assets/LUNE_PIPELINE.png" alt="LUNE Deception Pipeline" width="700"/> 
+</p>
+
 ---
 
 ## Quickstart
