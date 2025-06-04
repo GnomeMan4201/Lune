@@ -19,6 +19,10 @@ Designed to run on Kali Linux and similar environments, LUNE allows operators to
 - Terminal and GUI entrypoints
 - Designed for adaptability in offensive operations
 
+<p align="center">
+  <img src="lune/assets/gitpic.png" alt="LUNE Operator Console Screenshot" width="700"/>
+</p>
+
 ---
 
 ## Quickstart
