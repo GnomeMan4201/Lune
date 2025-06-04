@@ -36,9 +36,3 @@ source lune_env/bin/activate
 
 python3 -m lune.lune_tui  # Text UI launcher
 
-## Architecture
-
-## Visual Overview
-
-![LUNE Deception Pipeline](gitpic2.png)
-
