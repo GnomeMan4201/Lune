@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="lune/assets/gitpic1.png" alt="LUNE Red Glow Banner" width="500"/>
+  <img src="lune/assets/lune-banner.png" alt="LUNE Banner with Red Glow Cigar" width="500"/>
 </p>
 
 # LUNE
@@ -55,4 +55,3 @@ chmod +x setup.sh
 source lune_env/bin/activate
 
 python3 -m lune.lune_tui  # Text UI launcher
-
