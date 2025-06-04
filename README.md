@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="lune/assets/lune-banner.png" alt="LUNE Banner" width="500"/>
+  <img src="lune/assets/gitpic1.png" alt="LUNE Red Glow Banner" width="500"/>
 </p>
 
 # LUNE
@@ -29,7 +29,7 @@ Designed to run on Kali Linux and similar environments, LUNE allows operators to
 
 ## Architecture
 
-LUNE’s deception flow centers around injecting realistic noise into a controlled fake shell environment layered over the real system. The operator maintains full visibility while the target system is flooded with misleading artifacts.
+LUNE’s deception flow is layered and intentional. The operator sees through the illusion while a fake shell overlays the real system, injecting noise, creating realistic forensic artifacts, and feeding believable data to adversaries.
 
 <p align="center">
   <img src="visuals/lune_flow.png" alt="LUNE Architecture Diagram" width="800"/>
