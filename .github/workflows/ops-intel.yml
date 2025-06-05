@@ -1,34 +1,35 @@
-name: Ops Threat Intel
+name: Ops Intel Enrichment
 
 on:
   pull_request:
-    types: [opened, synchronize]
+    types: [opened, synchronize, reopened]
 
 jobs:
-  threat-scan:
+  recon:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+    env:
+      VIRUSTOTAL_API_KEY: ${{ secrets.VIRUSTOTAL_API_KEY }}
+      SHODAN_API_KEY: ${{ secrets.SHODAN_API_KEY }}
 
-      - name: Setup Python
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.x
+          python-version: '3.x'
 
-      - name: Run Threat Intel Lookup
+      - name: Install dependencies
         run: |
-          python3 scripts/ti_lookup.py README.md
+          pip install -r requirements.txt
 
-      - name: Post Forensic Report
+      - name: Run recon engine
         run: |
-          mkdir -p docs/intel
-          echo "## Threat Intel Report - $(date)" > docs/intel/$(date +%F).md
-          echo "PR scan completed. No immediate threats found." >> docs/intel/$(date +%F).md
+          python scripts/recon_engine.py
 
-      - name: Commit Forensic Report
-        run: |
-          git config user.name "ops-bot"
-          git config user.email "bot@lune.io"
-          git add docs/intel/
-          git commit -m "Ops: Threat report $(date +%F)" || echo "No changes"
-          git push
+      - name: Upload Recon Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: recon-report
+          path: docs/intel/recon_report.pdf
