@@ -1,0 +1,35 @@
+modules
+├── core
+│   ├── covert_tagger.py
+│   ├── filter_shell.py
+│   ├── history_poisoner.py
+│   ├── injector.py
+│   ├── lens_shell.py
+│   ├── loader.py
+│   ├── obfuscator.py
+│   ├── operator_filter.py
+│   ├── operator_lens.py
+│   ├── overlay_filter.py
+│   ├── overlay_shell.py
+│   ├── pollution_daemon.py
+│   ├── tags.py
+│   ├── traitor.py
+│   ├── traitor_shell.py
+│   ├── view.py
+│   └── xattr_tagging.py
+└── deception
+    ├── clipboard_noise.py
+    ├── deceit_injector.py
+    ├── decoyforge.py
+    ├── fakenuke
+    │   └── injector.py
+    ├── ghostdust.py
+    ├── inject_deceit.py
+    ├── injector.py
+    ├── mirrorshade.py
+    ├── operatorlens.py
+    ├── shell_alias_injector.py
+    ├── signal_obfuscator.py
+    └── tagger.py
+
+4 directories, 29 files
