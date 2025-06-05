@@ -1,15 +1,19 @@
 name: Ops Intel
+
 on:
   push:
     paths:
-      - 'scripts/signal_injector.py'
+      - 'scripts/**'
       - 'decoys.json'
+      - '.github/workflows/**'
+
 jobs:
-  deception-signal:
+  tripwire-monitor:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repo
         uses: actions/checkout@v3
-      - name: Inject Deception Signals
+
+      - name: Simulate Tripwire Monitor
         run: |
-          python scripts/signal_injector.py
+          python3 scripts/tripwire_monitor.py
