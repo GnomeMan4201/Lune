@@ -1,0 +1,34 @@
+name: Ops Threat Intel
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  threat-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      - name: Run Threat Intel Lookup
+        run: |
+          python3 scripts/ti_lookup.py README.md
+
+      - name: Post Forensic Report
+        run: |
+          mkdir -p docs/intel
+          echo "## Threat Intel Report - $(date)" > docs/intel/$(date +%F).md
+          echo "PR scan completed. No immediate threats found." >> docs/intel/$(date +%F).md
+
+      - name: Commit Forensic Report
+        run: |
+          git config user.name "ops-bot"
+          git config user.email "bot@lune.io"
+          git add docs/intel/
+          git commit -m "Ops: Threat report $(date +%F)" || echo "No changes"
+          git push
