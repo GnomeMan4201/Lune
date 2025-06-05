@@ -1,0 +1,11 @@
+name: PR Ops Intel
+on: [pull_request]
+jobs:
+  danger:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Danger Check
+        uses: danger/danger-js@9.1.4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

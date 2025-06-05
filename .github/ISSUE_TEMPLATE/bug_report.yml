@@ -1,0 +1,10 @@
+name: Bug Report
+description: File a bug report for LUNE
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug.
+    validations:
+      required: true

@@ -1,0 +1,10 @@
+name: Payload Request
+description: Suggest a new LUNE payload module
+body:
+  - type: input
+    id: module-name
+    attributes:
+      label: Name
+      description: Name of the suggested module
+    validations:
+      required: true
