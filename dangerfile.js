@@ -49,3 +49,23 @@ async function gptOpsIntel() {
 
 await gptOpsIntel()
 message(summary)
+
+const fs = require("fs");
+const { execSync } = require("child_process");
+
+try {
+  execSync("python3 scripts/threat_attributor.py");
+  const report = JSON.parse(fs.readFileSync("threat_report.json", "utf8"));
+
+  markdown("## 🕵️ Threat Attribution Report");
+
+  Object.entries(report.domains).forEach(([domain, info]) => {
+    markdown(`- 🔗 Domain: \`${domain}\` - ${JSON.stringify(info)}`);
+  });
+
+  Object.entries(report.ips).forEach(([ip, info]) => {
+    markdown(`- 🧠 IP: \`${ip}\`\n\n\`\`\`\nWHOIS:\n${info.whois?.slice(0, 300) || 'N/A'}\n\nShodan:\n${JSON.stringify(info.shodan, null, 2)}\n\`\`\``);
+  });
+} catch (error) {
+  markdown(`❌ Threat attribution failed: ${error.message}`);
+}
