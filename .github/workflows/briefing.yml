@@ -1,45 +1,39 @@
+# .github/workflows/briefing.yml
 name: Generate Redacted Briefing
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
-    branches:
-      - main
-  workflow_dispatch:
+    branches: [main]
+
+permissions:
+  contents: write
 
 jobs:
-  build-and-brief:
+  generate:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repo
-      uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v4
 
-    - name: Set up Python 3
-      uses: actions/setup-python@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
       with:
         python-version: '3.x'
 
-    - name: Install Python dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install fpdf
+    - name: Install dependencies
+      run: pip install fpdf
 
     - name: Ensure output folder exists
       run: mkdir -p docs/intel
 
-    - name: Generate briefing PDF
+    - name: Run briefing generator
       run: python scripts/brief_generator.py
 
-    - name: Commit briefing PDF (if changed)
+    - name: Commit PDF if changed
       run: |
         git config --global user.name "github-actions"
-        git config --global user.email "github-actions@github.com"
-        git add docs/intel/brief-auto.pdf || true
-        git diff --cached --quiet || git commit -m "Auto: Redacted briefing generated"
+        git config --global user.email "actions@github.com"
+        git add docs/intel/brief-auto.pdf
+        git diff --cached --quiet || git commit -m "Auto-update: redacted briefing"
         git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
