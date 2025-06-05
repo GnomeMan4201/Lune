@@ -1,35 +1,15 @@
-name: Ops Intel Enrichment
-
+name: Ops Intel
 on:
-  pull_request:
-    types: [opened, synchronize, reopened]
-
+  push:
+    paths:
+      - 'scripts/signal_injector.py'
+      - 'decoys.json'
 jobs:
-  recon:
+  deception-signal:
     runs-on: ubuntu-latest
-    env:
-      VIRUSTOTAL_API_KEY: ${{ secrets.VIRUSTOTAL_API_KEY }}
-      SHODAN_API_KEY: ${{ secrets.SHODAN_API_KEY }}
-
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v3
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-
-      - name: Install dependencies
+      - name: Inject Deception Signals
         run: |
-          pip install -r requirements.txt
-
-      - name: Run recon engine
-        run: |
-          python scripts/recon_engine.py
-
-      - name: Upload Recon Report
-        uses: actions/upload-artifact@v3
-        with:
-          name: recon-report
-          path: docs/intel/recon_report.pdf
+          python scripts/signal_injector.py

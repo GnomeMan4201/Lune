@@ -1,0 +1,22 @@
+[
+  {
+    "type": "ip",
+    "value": "203.0.113.77"
+  },
+  {
+    "type": "domain",
+    "value": "malicious-login.net"
+  },
+  {
+    "type": "hash",
+    "value": "e3b0c44298fc1c149afbf4c8996fb924"
+  },
+  {
+    "type": "url",
+    "value": "http://evil-update.example.com"
+  },
+  {
+    "type": "email",
+    "value": "admin@phishcorp.io"
+  }
+]
