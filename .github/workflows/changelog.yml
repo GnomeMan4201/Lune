@@ -1,0 +1,23 @@
+name: Generate Changelog and Draft Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Generate changelog
+        uses: heinrichreimer/action-github-changelog-generator@v2.3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit changelog
+        run: |
+          git config --global user.email "ci@lune"
+          git config --global user.name "LUNE CI"
+          git add CHANGELOG.md
+          git commit -m "Update changelog"
+          git push
