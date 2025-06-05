@@ -2,12 +2,11 @@ name: Generate Redacted Briefing
 
 on:
   pull_request:
-    types: [closed]
     branches: [main]
+  workflow_dispatch:
 
 jobs:
-  generate-brief:
-    if: github.event.pull_request.merged == true
+  build-brief:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,21 +16,23 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.10'
+        python-version: 3.11
 
-    - name: Install fpdf
-      run: pip install fpdf
+    - name: Install dependencies
+      run: pip install fpdf --quiet
 
-    - name: Create intel folder
+    - name: Ensure output directory exists
       run: mkdir -p docs/intel
 
-    - name: Generate briefing PDF
-      run: python scripts/brief_generator.py
+    - name: Run briefing script
+      run: python3 scripts/brief_generator.py
 
-    - name: Commit and push PDF
+    - name: Commit redacted brief
       run: |
-        git config user.name "LUNE Bot"
-        git config user.email "lune@ops.local"
+        git config user.name "github-actions"
+        git config user.email "actions@github.com"
         git add docs/intel/brief-auto.pdf
-        git commit -m "Auto-generated PR briefing"
+        git commit -m "Auto: update redacted brief"
         git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
