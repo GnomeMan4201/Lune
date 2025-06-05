@@ -2,7 +2,15 @@
   <img src="lune/assets/LUNE_LOGO.png" alt="LUNE Logo" width="300"/> 
 </p>
 
-<h2 align="center">A misdirection driven offensive toolkit for cognitive disruption</h2>
+
+
+
+
+<h2 align="center">A MISDIRECTION DRIVEN OFFENSIVE TOOLKIT FOR COGNITIVE DIRUPTION</h2>
+
+
+
+
 
 <p align="center">
   LUNE is a psychological cyber weapon an offensive decoy system engineered for red teams who trade in deception, not just disruption.<br>
@@ -11,23 +19,24 @@
   Designed for Kali and kin, it operates where truth is fluid, and visibility is just another vector to exploit.
 </p>
 
-<p align="center"><i>🧨 Note: Spicy by design—this copy doesn’t brief well in boardrooms, but it hits different in war rooms and late-night ops chats.</i></p>
+<p align="center"><i> 
+Note: Spicy by design—this copy doesn’t brief well in boardrooms, but it hits different in war rooms and late-night ops chats.</i></p>
 
 <hr>
 
-<h2 align="center">Philosophy</h2>
+<h2 align="center">PHILOSPY</h2>
 
 <p align="center">
 Most decoy and misdirection frameworks are designed for defense—to confuse attackers or distract from real assets.<br>
-LUNE flips the model. This framework is built for offensive operators who run deception as a weapon—flooding environments with crafted noise, fake shells, forged events, and manipulated telemetry.<br><br>
+LUNE flips the model. This framework is built for offensive operators who run deception as a weapon flooding environments with crafted noise, fake shells, forged events, and manipulated telemetry.<br><br>
 LUNE is what you reach for when subtlety is no longer the goal—when it’s time to go in loud and dirty.<br>
-Think of it as offensive misdirection at scale—a psychological smokescreen that disorients defenders while the operator sees through the chaos like Riddick in the dark.<br>
+Think of it as offensive misdirection at scale a psychological smokescreen that disorients defenders while the operator sees through the chaos like Riddick in the dark.<br>
 You're not just hiding. You're weaponizing confusion.
 </p>
 
 <hr>
 
-<h2 align="center">Features</h2>
+<h2 align="center">FEATURES</h2>
 
 <p align="center">
   Modular deception and implant ecosystem<br>
@@ -49,7 +58,7 @@ You're not just hiding. You're weaponizing confusion.
   <img src="lune/assets/LUNE_PIPELINE.png" alt="LUNE Deception Pipeline" width="700"/> 
 </p>
 
-<h2 align="center">Modules</h2>
+<h2 align="center">MODULES</h2>
 
 <p align="center">
 <code>aether</code>: Cloud service fingerprinting and profiling<br>
@@ -109,7 +118,7 @@ You're not just hiding. You're weaponizing confusion.
 <code>yield</code>: Exfil via timing and protocol diversion<br>
 </p>
 
-<h2 align="center">Quickstart</h2>
+<h2 align="center">QUICKSTART</h2>
 
 ```bash
 git clone https://github.com/GnomeMan4201/Lune.git
