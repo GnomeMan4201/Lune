@@ -8,7 +8,7 @@
 
 ## [ PHILOSOPHY ]
 <p align="center">
-  <code>LUNE is not a tool — it's a distortion field.</code><br>
+  <code>LUNE DROPS A SMOKE GRENADE - WHILE GIVEN THE OPERATOR RIDDICK VISION TO SEE EVERYTHING CLEARLY</code><br>
   <code>A false-reality shell. A trap-filled arena. A game of misdirection, not brute force.</code>
 </p>
 
