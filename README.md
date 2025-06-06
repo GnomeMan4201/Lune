@@ -49,16 +49,6 @@ git clone https://github.com/YourUsername/Lune.git
 cd Lune
 python3 lune-launcher.py
 
-
-## [ MOCKUPS ]
-
-> Terminal-based simulation of LUNE shell deception and noise ops:
-
-- [Operator Shell Interface](docs/mockups/LUNE_terminal_mockup.txt)
-- [Target-Side Decoy Simulation](docs/mockups/LUNE_decoy_behavior_simulator.txt)
-
-## [ MOCKUP VIEWER – GitHub Pages ]
-
 Browse formatted mockups directly on GitHub Pages:
 
 - [Operator Shell Interface](https://gnomeman4201.github.io/Lune/mockups/md/LUNE_terminal_mockup)
