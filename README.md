@@ -1,40 +1,51 @@
-<p align="center">  
-  <img src="lune/assets/LUNE_LOGO.png" alt="LUNE Logo" width="300"/> 
+<p align="center">
+  <img src="lune/assets/lune-banner.png" alt="LUNE Banner" width="600"/>
 </p>
 
-# 
-
-LUNE (Logical Uncertainty & Network Evasion) is a modular red team framework focused on adversary simulation, deception environments, and operational misdirection. Designed to run on Kali Linux and similar environments, LUNE allows operators to construct complex false realities inside target systems using layered decoys, injected noise, and deceptive behaviors.
+<h3 align="center"><code>🩸 Psychological Deception Engine for Red Team Operators</code></h3>
 
 ---
 
-## Features
-
-- Modular deception and implant ecosystem  
-- Operator-side TUI interface  
-- Real-time decoy injection, log pollution, false trail planting  
-- Modular design: plug-and-play scripts, drop-ins, and context-aware logic  
-- Post-ex toolkit integration  
-- Payload orchestration and noise layering  
-- Terminal and GUI entrypoints  
-- Designed for adaptability in offensive operations  
-
-<p align="center">  
-  <img src="lune/assets/LUNE.png" alt="LUNE UI Overview" width="700"/> 
-</p>
-
-<p align="center">  
-  <img src="lune/assets/LUNE_PIPELINE.png" alt="LUNE Deception Pipeline" width="700"/> 
+## [ PHILOSOPHY ]
+<p align="center">
+  <code>LUNE is not a tool — it's a distortion field.</code><br>
+  <code>A false-reality shell. A trap-filled arena. A game of misdirection, not brute force.</code>
 </p>
 
 ---
 
-## Quickstart
+## [ FEATURES ]
+<p align="center">
+  🌀 Fake Operator Shell<br>
+  🧠 Real-Time Decoy Beacons<br>
+  🕳 Fracture & IOC Injection<br>
+  🫥 Artifact Ghostloading<br>
+  🕸 Modular Deception Scripts<br>
+  🔍 Self-Diagnostic Module
+</p>
+
+---
+
+## [ MODULES ]
+<p align="center">
+
+| Module         | Description                                      |
+|----------------|--------------------------------------------------|
+| `lune.py`       | Entrypoint shell sim (launches fake environment) |
+| `decoy.py`      | Loads and displays decoy IOCs from JSON file     |
+| `fracture.py`   | Injects fake commands and IOCs into shell        |
+| `ghostload.py`  | Drops covert payloads for realism/noise          |
+| `lurestate.py`  | Emits operator "heartbeat" signals (RT beacon)   |
+| `lune-check.py` | Self-diagnostic scan of module readiness         |
+
+</p>
+
+---
+
+## [ QUICKSTART ]
 
 ```bash
-git clone https://github.com/GnomeMan4201/Lune.git
+git clone https://github.com/YourUsername/Lune.git
 cd Lune
-chmod +x setup.sh
-./setup.sh
-source lune_env/bin/activate
-python3 -m lune.lune_tui  # TUI launcher
+python3 lune-launcher.py
+
