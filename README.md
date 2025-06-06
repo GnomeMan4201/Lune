@@ -40,6 +40,12 @@
 
 </p>
 
+<p align="center">
+  <img src="lune/assets/gitpic.png" alt="LUNE TUI Screenshot" width="700"/>
+</p>
+
+
+
 ---
 
 ## [ QUICKSTART ]
