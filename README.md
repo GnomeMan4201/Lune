@@ -39,6 +39,19 @@
 | `lune-check.py` | Self-diagnostic scan of module readiness         |
 
 </p>
+
+---
+
+<h3 align="center"><code>OPERATOR MODULES MENU</code></h3>
+
+<p align="center">
+  <img src="assets/lune-ui.png" alt="LUNE Operator Console" width="720"/>
+</p>
+
+<p align="center">
+  <code>Modular operator interface featuring 58 payload, recon, and obfuscation modules.</code>
+</p>
+
 ---
 
 ## [ QUICKSTART ]
@@ -47,8 +60,3 @@
 git clone https://github.com/YourUsername/Lune.git
 cd Lune
 python3 lune-launcher.py
-
-Browse formatted mockups directly on GitHub Pages:
-
-- [Operator Shell Interface](https://gnomeman4201.github.io/Lune/mockups/md/LUNE_terminal_mockup)
-- [Target-Side Decoy Simulation](https://gnomeman4201.github.io/Lune/mockups/md/LUNE_decoy_behavior_simulator)
