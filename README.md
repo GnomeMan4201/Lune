@@ -2,7 +2,7 @@
   <img src="lune/assets/lune-banner.png" alt="LUNE Banner" width="600"/>
 </p>
 
-<h3 align="center"><code>🩸 Psychological Deception Engine for Red Team Operators</code></h3>
+<h3 align="center"><code> Psychological Deception Engine for Red Team Operators</code></h3>
 
 ---
 
@@ -16,12 +16,12 @@
 
 ## [ FEATURES ]
 <p align="center">
-  🌀 Fake Operator Shell<br>
-  🧠 Real-Time Decoy Beacons<br>
-  🕳 Fracture & IOC Injection<br>
-  🫥 Artifact Ghostloading<br>
-  🕸 Modular Deception Scripts<br>
-  🔍 Self-Diagnostic Module
+  Fake Operator Shell<br>
+  Real-Time Decoy Beacons<br>
+  Fracture & IOC Injection<br>
+  Artifact Ghostloading<br>
+  Modular Deception Scripts<br>
+  Self-Diagnostic Module
 </p>
 
 ---
