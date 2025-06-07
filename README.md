@@ -2,12 +2,12 @@
   <img src="assets/lune_logo.png" alt="LUNE Logo" width="220"/>
 </p>
 
-<h1 align="center">LUNE Operator</h1>
+<h1 align="center">LUNE/h1>
 
 <p align="center">
   <b>Live Deception &nbsp;|&nbsp; Persona Engine &nbsp;|&nbsp; Attribution Poisoning</b><br>
   <br>
-  LUNE is a next-generation red team and adversary simulation toolkit.<br>
+  LUNE is a next generation red team and adversary simulation toolkit.<br>
   Not another scanner. Not another wrapper.<br>
   This is psychological warfare, deception, and chaos—refined into a hacker’s TUI you’ll actually want to use.
 </p>
@@ -41,11 +41,11 @@
 <p align="center">
 LUNE lets you:<br>
 - <b>Select an adversary persona</b> (Lazarus, APT29, FIN7, NSA Equation Group, Script Kiddie, and more)<br>
-- <b>Live-generate deception artifacts</b>: DNS beacons, registry keys, fake logs, malware stubs, C2 traffic, and more—matching real-world threat group TTPs<br>
+- <b>Live generate deception artifacts</b>: DNS beacons, registry keys, fake logs, malware stubs, C2 traffic, and more matching real world threat group TTPs<br>
 - <b>Flood blue teams and DFIRs with noise and false indicators</b> (real “attribution poisoning”)<br>
-- <b>Spin up multi-layered decoy environments</b> with just a few keystrokes<br>
+- <b>Spin up multi layered decoy environments</b> with just a few keystrokes<br>
 - <b>Export a full simulated DFIR report</b> showing all artifacts planted<br>
-- <b>Clean up instantly</b> (stealth kill-switch)<br>
+- <b>Clean up instantly</b> (stealth kill switch)<br>
 - <b>All from a terminal menu you can actually be proud of</b>
 </p>
 
