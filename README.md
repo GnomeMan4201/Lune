@@ -2,7 +2,7 @@
   <img src="assets/lune_logo.png" alt="LUNE Logo" width="220"/>
 </p>
 
-<h1 align="center">LUNE/h1>
+<h1 align="center">LUNE</h1>
 
 <p align="center">
   <b>Live Deception &nbsp;|&nbsp; Persona Engine &nbsp;|&nbsp; Attribution Poisoning</b><br>
