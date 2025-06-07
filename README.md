@@ -19,25 +19,20 @@
 <p align="center">
   <b>Menu:</b><br>
   <img src="assets/screenshot_menu.png" width="700"/><br><br>
-
   <b>Persona Engine:</b><br>
   <img src="assets/screenshot_persona_engine.png" width="700"/><br><br>
-
   <b>GhostSignature:</b><br>
   <img src="assets/screenshot_ghostsignature.png" width="700"/><br><br>
-
   <b>Tripwire Monitor:</b><br>
   <img src="assets/screenshot_tripwire.png" width="700"/><br><br>
-
   <b>Hall of Mirrors:</b><br>
   <img src="assets/screenshot_hallofmirrors.png" width="700"/><br><br>
-
   <b>BlackNoise:</b><br>
   <img src="assets/screenshot_blacknoise.png" width="700"/><br><br>
-
   <b>Loot Watcher:</b><br>
   <img src="assets/screenshot_lootwatcher.png" width="700"/><br>
 </p>
+
 
 ---
 
