@@ -1,9 +1,18 @@
 <p align="center">
-  <img src="assets/lune-banner.png" alt="LUNE Logo" width="260">
+  <img src="assets/lune-banner.png" alt="LUNE Logo" width="240">
 </p>
 
 <h1 align="center">LUNE</h1>
 <p align="center"><em>Modular Adversary Simulation & Live Deception Framework</em></p>
+
+<p align="center">
+  <a href="https://github.com/GnomeMan4201/Lune/actions/workflows/ci.yml">
+    <img src="https://github.com/GnomeMan4201/Lune/actions/workflows/ci.yml/badge.svg" alt="CI Status">
+  </a>
+  <a href="https://github.com/GnomeMan4201/Lune/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License">
+  </a>
+</p>
 
 ---
 
@@ -30,8 +39,6 @@ LUNE is not about pretending to be nation-state; it’s about teaching you the t
 
 ## Install & Quickstart
 
-Clone and set up your virtual environment:
-
 ```bash
 git clone https://github.com/GnomeMan4201/Lune.git
 cd Lune
@@ -39,11 +46,11 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
-Launch the C2 server:
+Start the C2 server:
 
 python3 server/c2.py
 
-Deploy a beaconing agent (on test VM or different terminal):
+Deploy an agent (on a test VM or in another terminal):
 
 python3 agents/lune_agent.py
 
@@ -68,7 +75,7 @@ Project Structure
 Lune/
 ├── agents/                # Beaconing agents, persona engines
 ├── server/                # Flask C2 and control logic
-├── modules/               # All modular deception modules
+├── modules/               # Modular deception modules
 ├── data/                  # Queued tasks, agent state, dropped artifacts
 ├── assets/                # Logo, screenshots, mock CLI output
 ├── docs/                  # Full documentation set
@@ -78,7 +85,7 @@ Lune/
 └── ... (additional .md docs)
 
 Operator Experience
-<p align="center"> <img src="assets/screenshot_menu_alt.png" alt="LUNE Operator Menu" width="500"> <img src="assets/screenshot_persona_engine.png" alt="Persona Engine" width="500"> <img src="assets/screenshot_hallofmirrors.png" alt="Hall of Mirrors" width="500"> <img src="assets/screenshot_ghostsignature.png" alt="GhostSignature IOC Forge" width="500"> <img src="assets/screenshot_tripwire.png" alt="Tripwire Monitor" width="500"> <img src="assets/screenshot_blacknoise.png" alt="BlackNoise Generator" width="500"> <img src="assets/screenshot_lootwatcher.png" alt="Loot Watcher" width="500"> </p>
+<p align="center"> <img src="assets/lune-banner.png" alt="LUNE Logo" width="320"/> </p> <table> <tr> <td><img src="assets/screenshot_menu_alt.png" alt="Menu" width="400"/></td> <td><img src="assets/screenshot_persona_engine.png" alt="Persona Engine" width="400"/></td> </tr> <tr> <td><img src="assets/screenshot_hallofmirrors.png" alt="Hall of Mirrors" width="400"/></td> <td><img src="assets/screenshot_ghostsignature.png" alt="GhostSignature" width="400"/></td> </tr> <tr> <td><img src="assets/screenshot_tripwire.png" alt="Tripwire Monitor" width="400"/></td> <td><img src="assets/screenshot_blacknoise.png" alt="BlackNoise" width="400"/></td> </tr> <tr> <td colspan="2" align="center"><img src="assets/screenshot_lootwatcher.png" alt="Loot Watcher" width="400"/></td> </tr> </table>
 Documentation
 
     ARCHITECTURE.md: System & module design
